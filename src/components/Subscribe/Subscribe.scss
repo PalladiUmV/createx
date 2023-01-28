@@ -1,0 +1,61 @@
+.subscribe-bg {
+	background-color: #F3DDD0;
+	position: relative;
+}
+
+.subscribe {
+	padding-top: 120px;
+	padding-bottom: 180px;
+
+	// background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+
+	&__subtitle {
+		text-align: center;
+	}
+
+	&__title {
+		width: 810px;
+		margin: 0 auto;
+		text-align: center;
+
+	}
+
+	&__subscribe-us {
+		width: 600px;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 60px;
+		display: flex;
+		justify-content: space-between;
+
+		input {
+			width: 396px;
+			padding: 13px;
+			border: 1px solid #D7DADD;
+			border-radius: 4px;
+			outline: none;
+		}
+
+		button {
+			width: 154px;
+			background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+			border-radius: 4px;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	&__illustration-left {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	&__illustration-right {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+}

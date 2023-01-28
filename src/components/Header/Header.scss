@@ -1,0 +1,54 @@
+.header {
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 131.63px;
+
+	&__logo {
+		width: 130px;
+		height: 22px;
+		margin-right: 60px;
+	}
+
+	&__navigation {
+		margin-right: 222px;
+	}
+
+	&__navigation>ul {
+		display: flex;
+		list-style: none;
+		padding: 0;
+
+		li {
+			a {
+				text-decoration: none;
+			}
+		}
+
+		li:hover {
+			color: rgba(255, 63, 58, 1);
+			cursor: pointer;
+		}
+	}
+
+	&__navigation>ul>li:not(:last-child) {
+		margin-right: 40px;
+
+	}
+
+	&__get-consult-button {
+		width: 207px;
+		height: 52px;
+		margin-right: 37.67px;
+		cursor: pointer;
+	}
+
+	&__login {
+		display: flex;
+		align-items: center;
+
+		img {
+			margin-right: 9.6px;
+		}
+	}
+}

@@ -1,0 +1,124 @@
+.footer-bg {
+	background: #1E212C;
+}
+
+.footer {
+	padding: 81px 0 60px 0;
+	display: flex;
+	justify-content: space-between;
+
+	&__link-us {
+		display: flex;
+		flex-direction: column;
+		width: 279px;
+
+		p {
+			margin: 25px 0 39px 0;
+			color: #fff;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+
+	&__links {
+		display: flex;
+		justify-content: space-between;
+		width: 244px;
+
+		.facebook:hover {
+			svg {
+				path {
+					fill: rgb(47, 101, 218);
+				}
+			}
+		}
+
+		.twitter:hover {
+			svg {
+				path {
+					fill: rgb(41, 183, 240);
+				}
+			}
+		}
+
+		.youTube:hover {
+			svg {
+				path {
+					fill: rgb(240, 75, 64);
+				}
+			}
+		}
+
+		.telegram:hover {
+			svg {
+				path {
+					fill: rgb(5, 91, 126);
+				}
+			}
+		}
+
+		.instagram:hover {
+			svg {
+				path {
+					fill: rgb(223, 74, 15);
+				}
+			}
+		}
+
+		.linkedIn:hover {
+			svg {
+				path {
+					fill: rgb(6, 77, 168);
+				}
+			}
+		}
+	}
+
+	&__contact-us {
+
+		.phone::before {
+			content: url('../../images/links/iPhone.svg');
+			margin-right: 11.33px;
+		}
+
+		.email::before {
+			content: url('../../images/links/Mail.svg');
+			margin-right: 8.83px;
+		}
+	}
+
+	&__sign-up {
+		input {
+			width: 286px;
+			background: rgba(255, 255, 255, 0.12);
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			border-radius: 4px;
+			outline: none;
+			padding: 9px 0 9px 12px;
+			color: #fff;
+		}
+
+		p {
+			width: 286px;
+			font-weight: 400;
+			font-size: 10px;
+			color: #fff;
+		}
+	}
+}
+
+
+.all-rights-bg {
+	padding: 9px 0;
+	background: #292c37;
+	color: #fff;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.all-rights {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
