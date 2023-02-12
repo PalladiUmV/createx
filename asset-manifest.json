@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/createx/static/css/main.ba0fedd3.css",
-    "main.js": "/createx/static/js/main.0d32ffc7.js",
+    "main.css": "/createx/static/css/main.37133afb.css",
+    "main.js": "/createx/static/js/main.34b99955.js",
     "static/media/podcast.svg": "/createx/static/media/podcast.b869c8b75070f484a9f887f1e68854ac.svg",
     "static/media/benefits-illustration.svg": "/createx/static/media/benefits-illustration.8330fa353a2f06c5a76606d7ffa0c143.svg",
     "static/media/article.svg": "/createx/static/media/article.0baa2841b81c4edad2fd70fd1723a861.svg",
@@ -33,16 +33,17 @@
     "static/media/Calendar.svg": "/createx/static/media/Calendar.db399d2aaba42e56041a29ce06821212.svg",
     "static/media/Clock.svg": "/createx/static/media/Clock.e9939b7278e0c35c257a727301061849.svg",
     "static/media/Mail.svg": "/createx/static/media/Mail.0017d34f1bcba56cdc37.svg",
+    "static/media/input-lupa.svg": "/createx/static/media/input-lupa.7d333262b719378c619d.svg",
     "static/media/iPhone.svg": "/createx/static/media/iPhone.3e1b5f0d0ef9e1e0ac43.svg",
     "static/media/arrowRight.svg": "/createx/static/media/arrowRight.3c94a94d0f0582baecfd638f938406c1.svg",
     "static/media/hover.svg": "/createx/static/media/hover.d38719a7e843e6f20d8374078addb995.svg",
     "index.html": "/createx/index.html",
     "static/media/divider.svg": "/createx/static/media/divider.e06bfbc785614a5ede80ea0e8615d817.svg",
-    "main.ba0fedd3.css.map": "/createx/static/css/main.ba0fedd3.css.map",
-    "main.0d32ffc7.js.map": "/createx/static/js/main.0d32ffc7.js.map"
+    "main.37133afb.css.map": "/createx/static/css/main.37133afb.css.map",
+    "main.34b99955.js.map": "/createx/static/js/main.34b99955.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba0fedd3.css",
-    "static/js/main.0d32ffc7.js"
+    "static/css/main.37133afb.css",
+    "static/js/main.34b99955.js"
   ]
 }
