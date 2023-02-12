@@ -311,15 +311,15 @@ export const HomePage = () => {
 
 			<div className="events-bg">
 				<div className="wrapper">
-					<div className="events">
-						<h6 className="events__subtitle subtitle">
+					<div className="homepage-events">
+						<h6 className="homepage-events__subtitle subtitle">
 							Our Events
 						</h6>
-						<h2 className="events__title title">
+						<h2 className="homepage-events__title title">
 							Lectures & workshops
 						</h2>
-						<div className="event">
-							<div className="event__date">
+						<div className="homepage__event event-horizontal">
+							<div className="event-horizontal__date">
 								<span className='date-number'>
 									05
 								</span>
@@ -330,16 +330,16 @@ export const HomePage = () => {
 									<span>11:00 – 14:00</span>
 								</div>
 							</div>
-							<div className="event__name">
+							<div className="event-horizontal__name">
 								<p>Formation of the organizational structure of the company in the face of uncertainty.</p>
 								<p>Onine master-class</p>
 							</div>
-							<button className="event__button event__button_active button">
+							<button className="event-horizontal__button event-horizontal__button_active button">
 								View more
 							</button>
 						</div>
-						<div className="event">
-							<div className="event__date">
+						<div className="homepage__event event-horizontal">
+							<div className="event-horizontal__date">
 								<span className='date-number'>
 									24
 								</span>
@@ -350,16 +350,16 @@ export const HomePage = () => {
 									<span>11:00 – 12:30</span>
 								</div>
 							</div>
-							<div className="event__name">
+							<div className="event-horizontal__name">
 								<p>Building a customer service department. Best Practices.</p>
 								<p>Onine lecture</p>
 							</div>
-							<button className="event__button event__button_active button">
+							<button className="event-horizontal__button event-horizontal__button_active button">
 								View more
 							</button>
 						</div>
-						<div className="event">
-							<div className="event__date">
+						<div className="homepage__event event-horizontal">
+							<div className="event-horizontal__date">
 								<span className='date-number'>
 									16
 								</span>
@@ -370,11 +370,11 @@ export const HomePage = () => {
 									<span>10:00 – 13:00</span>
 								</div>
 							</div>
-							<div className="event__name">
+							<div className="event-horizontal__name">
 								<p>How to apply methods of speculative design in practice. Worldbuilding prototyping.</p>
 								<p>Onine workshop</p>
 							</div>
-							<button className="event__button event__button_active button">
+							<button className="event-horizontal__button event-horizontal__button_active button">
 								View more
 							</button>
 						</div>
@@ -454,7 +454,7 @@ export const HomePage = () => {
 								</div>
 								<div className="slide">
 									<div className="slide__img">
-										<img src={leslie} alt="leslieSlider" width={245} height={320} />
+										<img src={dianneSlider} alt="leslieSlider" width={245} height={320} />
 									</div>
 									<div className="slide__info">
 										<p className="slide__name">Marvin McKinney</p>
@@ -463,7 +463,7 @@ export const HomePage = () => {
 								</div>
 								<div className="slide">
 									<div className="slide__img">
-										<img src={guy} alt="guySlider" width={245} height={320} />
+										<img src={jeromeSlider} alt="guySlider" width={245} height={320} />
 									</div>
 									<div className="slide__info">
 										<p className="slide__name">Marvin McKinney</p>

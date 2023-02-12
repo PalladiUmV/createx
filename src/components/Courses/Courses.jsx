@@ -22,12 +22,13 @@ import kathryn from './persons/Kathryn.svg'
 import cody from './persons/Cody.svg'
 import brooklyn from './persons/Brooklyn.svg'
 
-console.log(Math.sqrt(-1))
 
 export const Courses = () => {
 
 	const [filtered, setFiltered] = useState([]);
 	const [searchCourse, setSearchCourse] = useState('');
+	const keys = ["spec", "title", "price", "teacher"];
+
 
 	useEffect(() => {
 		setFiltered(courses)
@@ -42,16 +43,13 @@ export const Courses = () => {
 		}
 	}
 
-	// const inputSearch = (inputText, courses) => {
-	// 	if (!inputText) return courses;
-	// 	console.log(inputText);
-	// 	let newArray = [...filtered].filter((item) => item.teacher.includes(inputText))
-	// 	setFiltered(newArray)
-	// }
-
-	const inputSearch = filtered.filter(item => item.spec.toLowerCase().includes(searchCourse.toLowerCase()))
-	console.log(inputSearch)
-
+	const inputSearch = (data) => {
+		return data.filter((item) =>
+			keys.some((key) => {
+				console.log('itemKey >> ', item[key])
+				return item[key].toString().toLowerCase().includes(searchCourse.toString().toLowerCase())
+			}))
+	}
 	const coursesCount = [
 		{ title: 'All', sup: 17 },
 		{ title: 'Marketing', sup: 4 },
@@ -90,14 +88,14 @@ export const Courses = () => {
 							)
 						})
 						}
-						<input onChange={(e) => inputSearch(e.target.value)} type="text" placeholder='Search course...' />
+						<input onChange={(e) => setSearchCourse(e.target.value)} type="text" placeholder='Search course...' />
 					</div>
 
 					<div className="courses__cards main-courses">
 
 
 						{
-							inputSearch.map((item, idx) => {
+							inputSearch(filtered).map((item, idx) => {
 								const { src, alt, spec, specColor, title, price, teacher } = item;
 								return (
 									<div key={idx + alt} className="courses__card course">
