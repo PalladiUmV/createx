@@ -1,6 +1,14 @@
-import { Header } from '../Header/Header'
-import { Link } from 'react-router-dom'
 import './AboutPage.scss'
+import { Header } from '../Header/Header'
+import { OurBlog } from '../OurBlog/OurBlog'
+import { Subscribe } from '../Subscribe/Subscribe'
+import { Footer } from '../Footer/Footer'
+
+
+
+import { Link } from 'react-router-dom'
+
+
 
 import mainIllustration from './images/about-page-main-illustr.svg'
 import studyingIllustration from './images/studyingIllustration.svg'
@@ -19,6 +27,20 @@ import cubiks from './images/cubiks.svg'
 import designCards from './images/designCards.svg'
 import code from './images/code.svg'
 import arrowRight from '../../images/our-blog-latest-posts/arrowRight.svg'
+
+// jobs img
+import indepth from './images/logoindepth.svg'
+import higher from './images/logohigher.svg'
+import sentinal from './images/logosentinal.svg'
+import happyhome from './images/logohappyhome.svg'
+import forsale from './images/logoforsale.svg'
+import sunset from './images/logosunset.svg'
+import atlantis from './images/logoatlantis.svg'
+import delmar from './images/logodelmar.svg'
+import complete from './images/logocomplete.svg'
+import national from './images/logonational.svg'
+import ultimate from './images/logoultimate.svg'
+import united from './images/logounited.svg'
 
 //team images 
 import dianneSlider from '../../images/persons/slider/dianne-slider.svg'
@@ -266,7 +288,58 @@ export const About = () => {
 
 					</div>
 				</div>
-			</div >
+
+
+				<div className="best-jobs-bg">
+					<div className="wrapper">
+						<div className="best-jobs">
+							<div className="best-jobs__subtitle subtitle">best jobs for you</div>
+							<div className="best-jobs__title title">Our students work here</div>
+							<div className="best-jobs__jobs">
+								<div className="best-jobs__job">
+									<img src={indepth} alt="higher" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={higher} alt="higher" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={sentinal} alt="sentinal" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={happyhome} alt="happyhome" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={forsale} alt="forsale" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={sunset} alt="sunset" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={atlantis} alt="atlantis" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={delmar} alt="delmar" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={complete} alt="complete" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={national} alt="national" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={ultimate} alt="ultimate" />
+								</div>
+								<div className="best-jobs__job">
+									<img src={united} alt="united" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<OurBlog />
+				<Subscribe />
+				<Footer />
+			</div>
 		</>
 	)
 }
