@@ -51,11 +51,9 @@ export const Events = () => {
 
 	return (
 		<>
-			<div className="wrapper">
-				<Header />
-			</div>
-			<div className="wrapper">
+			<Header />
 
+			<div className="wrapper">
 				<div className="events-page">
 					<h6 className="events-page__subtitle subtitle">Our events</h6>
 					<h1 className='events-page__title title'>Lectures, workshops & master-classes</h1>

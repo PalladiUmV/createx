@@ -121,4 +121,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	&__go-to-top-button {
+		cursor: pointer;
+
+		&:hover {
+			color: #FF3F3A;
+		}
+	}
 }

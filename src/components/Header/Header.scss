@@ -21,6 +21,11 @@
 		li {
 			a {
 				text-decoration: none;
+				color: #424551;
+
+				&:hover {
+					color: #FF3F3A;
+				}
 			}
 		}
 

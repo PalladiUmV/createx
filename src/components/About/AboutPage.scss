@@ -1,0 +1,305 @@
+.about-page {
+	margin-top: 80px;
+
+	&__title {
+		width: 468px;
+		margin-bottom: 48px;
+	}
+
+	&__intro {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 180px;
+
+		&-left-container {
+			width: 600px;
+		}
+
+		&-right-container {
+			display: flex;
+			align-items: end;
+		}
+
+		&-text-bold {
+			font-weight: 700;
+			font-size: 20px;
+			color: #1E212C;
+			line-height: 30px;
+		}
+
+		&-text-light {
+			font-weight: 400;
+			font-size: 16px;
+			color: #424551;
+			line-height: 25.6px;
+		}
+
+		&-buttons {
+			margin-top: 60px;
+		}
+
+		&-button-explore {
+			width: 193px;
+			height: 52px;
+			margin-right: 24px;
+			transition: all 0.4s ease-in;
+			color: linear-gradient(55.95deg, #FF3F3A 100%, #F75E05 100%);
+		}
+
+		&-button-browse {
+			width: 199px;
+			height: 52px;
+		}
+	}
+}
+
+.video-statistic {
+
+	&__play-button {
+		display: flex;
+		align-items: center;
+		margin-bottom: 32px;
+
+		img {
+			margin-right: 16px;
+		}
+	}
+
+	&__contaier {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__statistic {
+		ul {
+			list-style: none;
+
+			li {
+				margin-bottom: 20px;
+				font-size: 18px;
+				color: #1E212C;
+				line-height: 27px;
+				display: flex;
+				align-items: center;
+
+				span {
+					font-weight: 900;
+					font-size: 48px;
+					letter-spacing: 1px;
+					color: #FF3F3A;
+					line-height: 62.4px;
+					margin-right: 16px;
+				}
+
+
+
+			}
+		}
+	}
+}
+
+.our-values {
+	margin: 180px 0;
+
+
+	&__subtitle,
+	&__title {
+		text-align: center;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 60px;
+		align-items: baseline;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 240px;
+		position: relative;
+
+
+		&:not(:last-child)::after {
+			content: '';
+			display: block;
+			height: 162px;
+			width: 1px;
+			right: -45px;
+			background-color: #E1E2E4;
+			position: absolute;
+		}
+
+		&-icon {}
+
+		&-title {
+
+			font-size: 20px;
+			line-height: 30px;
+			color: #1E212C;
+			text-align: center;
+		}
+
+		&-text {
+			font-weight: 400;
+			line-height: 25.6px;
+			color: #787A80;
+			text-align: center;
+		}
+	}
+}
+
+.our-directions {
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+	}
+
+	&__card {
+		width: 390px;
+		margin-right: 18px;
+		cursor: pointer;
+		flex-direction: column;
+
+		&-content {
+			margin: 24px;
+		}
+
+		&-text {
+			font-weight: 400;
+			color: #787A80;
+			line-height: 25.6px;
+		}
+
+		&-link-more {
+			text-decoration: none;
+			color: #1E212C;
+
+			img {
+				margin-left: 11px;
+			}
+		}
+	}
+
+	&__card-soon {
+		width: 390px;
+		height: 380px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(244, 245, 246, 1);
+		font-size: 20px;
+		line-height: 30px;
+		color: #424551;
+		text-align: center;
+
+		span {
+			width: 242px;
+		}
+	}
+}
+
+
+.studying-process {
+
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+
+	&__left-container {
+		width: 430px;
+	}
+
+	&__right-container {
+		display: flex;
+		align-items: end;
+	}
+
+	&__list {
+		margin-top: 60px;
+		list-style: none;
+
+		li {
+			margin-bottom: 32px;
+			position: relative;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&::before {
+				content: '';
+				display: block;
+				width: 1px;
+				height: 120px;
+				background-color: #CCCED2;
+				position: absolute;
+				top: 20px;
+				left: -36px;
+			}
+
+			&:last-child::before {
+				height: 70px;
+			}
+
+		}
+
+		&-step {
+			font-weight: 900;
+			font-size: 12px;
+			color: #787A80;
+			line-height: 18px;
+			text-transform: uppercase;
+
+			// &:not(:last-child)::after {
+			&:not(:last-child)::before {
+				content: '';
+				display: block;
+				width: 8px;
+				height: 8px;
+				background-color: #FF3F3A;
+				border-radius: 50%;
+				position: absolute;
+				top: 6.7px;
+				left: -40px;
+			}
+
+
+		}
+
+		&-title {
+			font-size: 20px;
+			color: #1E212C;
+			margin: 2px 0 8px 0;
+			position: relative;
+
+
+		}
+
+		&-text {
+			font-weight: 400;
+			color: #787A80;
+		}
+	}
+}
+
+.all-team {
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+
+	&__card {
+		margin-right: 0 !important;
+		margin-bottom: 60px;
+	}
+}

@@ -37,6 +37,7 @@ import arrowRight from '../../images/our-blog-latest-posts/arrowRight.svg'
 import podcast from '../../images/our-blog-latest-posts/podcast.svg'
 import video from '../../images/our-blog-latest-posts/video.svg'
 import article from '../../images/our-blog-latest-posts/article.svg'
+import { Link } from 'react-router-dom'
 
 // footer
 
@@ -59,12 +60,13 @@ export const HomePage = () => {
 			return (Math.min(newOffset, 630));
 		})
 	}
+
+
 	return (
 		<>
-
 			<div className="main-bg">
+				<Header />
 				<div className="wrapper">
-					<Header />
 					<div className="main-info">
 						<div className="main-info__left-part">
 							<div className="main-info__play-image">
@@ -75,8 +77,8 @@ export const HomePage = () => {
 								Enjoy studying with Createx Online Courses
 							</h1>
 							<div className="main-info__main-buttons">
-								<button className="button">About us</button>
-								<button className="button_orange">Explore courses</button>
+								<button className="main-info__about-button button">About us</button>
+								<button className="main-info__explore-button button_orange">Explore courses</button>
 							</div>
 						</div>
 						<div className="main-info__right-part">
@@ -153,7 +155,7 @@ export const HomePage = () => {
 							Featured Courses
 						</h2>
 						<button className="featured__button button asfe">
-							View all courses
+							<Link to='/courses'>View all courses</Link>
 						</button>
 					</div>
 
@@ -380,7 +382,9 @@ export const HomePage = () => {
 						</div>
 						<div className="show-all-events">
 							<button className='show-all-events__more'>Do you want more?</button>
-							<button className='show-all-events__explore show-all-events__explore button '>Explore all events</button>
+							<button className='show-all-events__explore button'>
+								<Link to='/events'>Explore all events</Link>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -414,9 +418,9 @@ export const HomePage = () => {
 							</div>
 						</div>
 
-						<div className="slider">
-							<div className="slider-line" style={{ right: `${translate}px` }}>
-								<div className="slide">
+						<div className="meet-our-team-slider">
+							<div className="meet-our-team-slider__container" style={{ right: `${translate}px` }}>
+								<div className="meet-our-team-slider__card slide">
 									<div className="slide__img">
 										<img src={dianneSlider} alt="dianneslide" />
 									</div>
@@ -425,7 +429,7 @@ export const HomePage = () => {
 										<p className="slide__job-title">Founder and CEO</p>
 									</div>
 								</div>
-								<div className="slide">
+								<div className="meet-our-team-slider__card slide">
 									<div className="slide__img">
 										<img src={jeromeSlider} alt="jeromeSlider" />
 									</div>
@@ -434,7 +438,7 @@ export const HomePage = () => {
 										<p className="slide__job-title">Founder and Program Director</p>
 									</div>
 								</div>
-								<div className="slide">
+								<div className="meet-our-team-slider__card slide">
 									<div className="slide__img">
 										<img src={kristinSlider} alt="kristinslide" />
 									</div>
@@ -443,7 +447,7 @@ export const HomePage = () => {
 										<p className="slide__job-title">Marketer, Curator of Marketing Course</p>
 									</div>
 								</div>
-								<div className="slide">
+								<div className="meet-our-team-slider__card slide">
 									<div className="slide__img">
 										<img src={marvinSlider} alt="marvinSlider" />
 									</div>
@@ -452,7 +456,7 @@ export const HomePage = () => {
 										<p className="slide__job-title">PM, Curator of Management Course</p>
 									</div>
 								</div>
-								<div className="slide">
+								<div className="meet-our-team-slider__card slide">
 									<div className="slide__img">
 										<img src={dianneSlider} alt="leslieSlider" width={245} height={320} />
 									</div>
@@ -461,7 +465,7 @@ export const HomePage = () => {
 										<p className="slide__job-title">PM, Curator of Management Course</p>
 									</div>
 								</div>
-								<div className="slide">
+								<div className="meet-our-team-slider__card slide">
 									<div className="slide__img">
 										<img src={jeromeSlider} alt="guySlider" width={245} height={320} />
 									</div>

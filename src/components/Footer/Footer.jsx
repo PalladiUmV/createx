@@ -4,6 +4,13 @@ import './Footer.scss'
 import footerLogo from '../../images/links/footerLogo.svg'
 
 export const Footer = () => {
+
+	const goToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	};
 	return (
 		<div className="footer-bg">
 			<div className="wrapper">
@@ -108,7 +115,7 @@ export const Footer = () => {
 							by Createx Studio
 						</p>
 
-						<span>GO TO TOP</span>
+						<span className='all-rights__go-to-top-button' onClick={goToTop}>GO TO TOP</span>
 					</div>
 				</div>
 			</div>

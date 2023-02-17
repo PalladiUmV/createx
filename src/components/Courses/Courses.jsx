@@ -73,9 +73,7 @@ export const Courses = () => {
 
 	return (
 		<>
-			<div className="wrapper">
-				<Header />
-			</div>
+			<Header />
 			<div className="wrapper">
 				<div className="courses">
 					<h6 className="courses__subtitle subtitle">Enjoy your studying!</h6>
@@ -92,8 +90,6 @@ export const Courses = () => {
 					</div>
 
 					<div className="courses__cards main-courses">
-
-
 						{
 							inputSearch(filtered).map((item, idx) => {
 								const { src, alt, spec, specColor, title, price, teacher } = item;
@@ -119,14 +115,10 @@ export const Courses = () => {
 								)
 							})
 						}
-
 					</div>
-
 				</div>
 			</div>
-			<div className="wrapper">
-				<Certificate />
-			</div>
+			<Certificate />
 			<Subscribe />
 			<Footer />
 		</>
